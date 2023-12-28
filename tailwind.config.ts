@@ -12,7 +12,8 @@ const config: Config = {
         customNavy: '#01002f',
         customViolet: '#442a86',
         primaryButtonColor: '#635bff',
-        secondaryButtonColor: '#eeeee'
+        secondaryButtonColor: '#eeeee',
+        offWhite: '#f0f2ff'
       }
     },
   },

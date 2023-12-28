@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 h-100 w-full py-1 transition-all duration-300 ${isScrolled ? 'bg-white text-black shadow-md' : 'bg-transparent text-white'}`}>
+    <nav className={`fixed top-0 h-100 w-full z-10 py-1 transition-all duration-300 ${isScrolled ? 'bg-white text-black shadow-md' : 'bg-transparent text-white'}`}>
       <div className="max-w-screen-lg mx-auto p-4 flex justify-between items-center">
         <ul className="flex space-x-8 list-none">
           <li><a href="#">Home</a></li>
