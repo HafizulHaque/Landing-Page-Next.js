@@ -1,6 +1,19 @@
-const Button = () => {
+type PropTypes = {
+  text: string,
+  type?: 'primary' | 'secondary',
+  size?: 'lg' | 'md' | 'sm',
+  variant?: 'outlined' | 'filled',
+  rounded?: 'none' | 'rounded' | 'pill',
+  onClick: () => void
+}
+
+const Button = ({ text, type, size, variant, rounded, onClick }: PropTypes) => {
   return (
-    <button className="bg-blue-500 text-white px-4 py-2 rounded-md">Click Me</button>
+    <button 
+      className={`${type === 'secondary' ? 'secondaryButtonColor text-black' : 'bg-primaryButtonColor text-white'} px-4 py-2 rounded-md`}
+      onClick={onClick}>
+      {text}
+    </button>
   )
 }
 

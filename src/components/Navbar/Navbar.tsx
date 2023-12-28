@@ -21,15 +21,16 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 h-100 w-full py-1 transition-all duration-300 ${isScrolled ? 'bg-white text-black shadow-md' : 'bg-transparent text-white'}`}>
-      <div className="max-w-screen-lg mx-auto p-4 flex justify-between align-items-center">
-        <ul className="flex space-x-4 list-none">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
+      <div className="max-w-screen-lg mx-auto p-4 flex justify-between items-center">
+        <ul className="flex space-x-8 list-none">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Model</a></li>
+          <li><a href="#">Be a Partner</a></li>
+          <li><a href="#">More</a></li>
         </ul>
-        <div>
-          <a href="#">Link 3</a>
-          <Button/>
+        <div className="flex space-x-8 items-center">
+          <a href="#">Login</a>
+          <Button text="Join Our Discord" onClick={() => {}}/>
         </div>
       </div>
     </nav>

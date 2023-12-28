@@ -1,9 +1,17 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
-import Navbar from '@/components/Navbar/Navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const plusJakartaSans = Plus_Jakarta_Sans({ 
+  subsets: ['latin'] ,
+  weight: ['400', '700']
+})
+
+const clashDisplay = localFont({
+  src: './font/local/ClashDisplay-Variable.ttf',
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: 'BS-23 Assignment',
@@ -17,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={clashDisplay.className}>
         {children}
       </body>
     </html>

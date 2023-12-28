@@ -10,7 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         customNavy: '#01002f',
-        customViolet: '#cd63ff'
+        customViolet: '#442a86',
+        primaryButtonColor: '#635bff',
+        secondaryButtonColor: '#eeeee'
       }
     },
   },

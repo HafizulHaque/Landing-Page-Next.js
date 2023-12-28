@@ -13,9 +13,11 @@
     "test:watch": "jest --watchAll"
   },
   "dependencies": {
+    "@next/font": "^14.0.4",
     "next": "^13.4.10",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-fast-marquee": "^1.6.2"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.6",
