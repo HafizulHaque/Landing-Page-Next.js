@@ -46,7 +46,7 @@ const Footer = () => {
             <h3 className="text-lg font-medium text-gray-100 mb-1">Contact Information</h3>
             <ul>
               <li className="my-2">
-                <a className="flex items-center" href="#"><img className="mr-2" src="./sms.svg" alt="icon"/><span>hafizul.cse.cuet@gmail.com</span></a>
+                <a className="flex items-center" href="#"><img className="mr-2" src="./sms.svg" alt="icon"/><span>hafizul@gmail.com</span></a>
               </li>
               <li className="my-2">
                 <a className="flex items-center" href="#"><img className="mr-2" src="./call.svg" alt="icon"/><span>+8801833184155</span></a>
