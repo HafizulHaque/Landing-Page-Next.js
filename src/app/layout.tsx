@@ -14,7 +14,7 @@ const clashDisplay = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'BS-23 Assignment',
+  title: 'Assignment Project',
   description: 'Assignment Project for Brain Station 23',
 }
 
