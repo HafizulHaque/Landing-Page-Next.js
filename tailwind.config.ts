@@ -13,7 +13,8 @@ const config: Config = {
         customViolet: '#442a86',
         primaryButtonColor: '#635bff',
         secondaryButtonColor: '#eeeee',
-        offWhite: '#f0f2ff'
+        offWhite: '#f0f2ff',
+        pink: '#c963ff'
       }
     },
   },
