@@ -32,7 +32,12 @@ const MobileNav = () => {
     <nav className={`fixed top-0 left-0 z-50 h-100 w-full py-4 transition-all duration-300 ${isScrolled || isMenuOpen ? 'bg-white text-black shadow-md' : 'bg-transparent text-white'} ${isMenuOpen ? 'rounded-b-xl' : 'rounded-b-md'}`}>
       {/* mobile nav icon  */}
       <div className="flex justify-between items-center px-4">
-        <a href="#" className={`font-semibold ${isScrolled || isMenuOpen ? 'text-customNavy' : 'text-white'}`}>Login</a>
+        <a 
+          href="#" 
+          className={`font-semibold ${isScrolled || isMenuOpen ? 'text-customNavy' : 'text-white'}`}
+          onClick={closeMenu}>
+          Login
+        </a>
         {
           !isMenuOpen ? (
             <svg
@@ -65,7 +70,7 @@ const MobileNav = () => {
       </div>
       {/* nav icons  */}
       {isMenuOpen ? (
-        <div className='bg-white text-black px-4'>
+        <div className='bg-white text-black px-4' onClick={closeMenu}>
           <ul className="list-none">
             <li className='my-2'><a href="#">Home</a></li>
             <li className='my-2'><a href="#" className="flex items-center space-x-1"><span>Model</span><img src={isScrolled || isMenuOpen ? `./expand_more_light.svg`:`./expand_more.svg`}/></a></li>
