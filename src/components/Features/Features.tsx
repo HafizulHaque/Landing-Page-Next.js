@@ -10,7 +10,8 @@ const dataArray = [
 const Features = () => {
   return (
     <section className="bg-offWhite overflow-x-hidden">
-      <div className="max-w-screen-lg mx-auto p-4 py-16 lg:py-32">
+      <div className="max-w-screen-lg mx-auto p-4 py-16 lg:py-32 relative">
+        <img src="./union-1.svg" alt="design" className="absolute left-[-120%] lg:left-[-100px] bottom-[50px] z-0"/>
         <div className="block lg:flex lg:items-center lg:space-x-8">
           <div className="lg:w-1/2">
             <div>
@@ -38,7 +39,7 @@ const Features = () => {
           <div className="lg:w-1/2">
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 p-8 lg:p-0">
               {dataArray.map((item, index) => (
-                <div key={index} className="">
+                <div key={index} className={index%2 === 0 ? 'relative lg:top-[-26px]':''}>
                   <Feature {...item}/>
                 </div>
               ))}

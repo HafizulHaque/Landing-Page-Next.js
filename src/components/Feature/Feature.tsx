@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useRef } from "react"
+import { useEffect, useState, useRef, RefObject } from "react"
 
 type PropsType = {
   image: string,
@@ -10,18 +10,29 @@ type PropsType = {
 
 const Feature = (data: PropsType) => {
 
-  const ref = useRef<HTMLDivElement>(null)
+  const ref: RefObject<HTMLDivElement> = useRef(null)
+  const [height, setHeight] = useState<number>(0);
+
+  const determineHeight = () => {
+    if(ref.current){
+      setHeight(ref.current.offsetWidth);
+    }
+  };
 
   useEffect(() => {
-    const width = ref?.current?.offsetWidth
-    if(ref.current !== null){
-      ref.current.style.height = `${width}px`;
+    if(typeof window !== 'undefined'){
+      determineHeight()
+      window.addEventListener('resize', determineHeight);
+      return () => {
+        window.removeEventListener('resize', determineHeight);
+      };
     }
-  })
+  }, []);
 
   return (
     <div 
-      className={`${data.isPrimary ? 'bg-gradient-to-r from-primaryButtonColor to-pink text-white' : 'bg-white text-black'} p-4 w-100 h-100 rounded-2xl relative`}
+      className={`${data.isPrimary ? 'bg-gradient-to-r from-primaryButtonColor to-pink text-white' : 'bg-white text-black'} p-4 w-100 rounded-2xl relative`}
+      style={{height: `${height}px`}}
       ref={ref}>
       <img 
         className="absolute top-0 right-0" 
