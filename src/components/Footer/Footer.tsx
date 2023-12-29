@@ -57,7 +57,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="lg:flex lg:justify-between lg:items-center py-8 lg:gap-x-4 text-gray-300">
+        <div className="lg:flex lg:justify-between lg:items-center py-8 lg:gap-x-4 text-gray-300 text-xs">
           <p>&copy; 2023, All Rights Reserved</p>
           <div className="flex items-center space-x-4 font-sm lg:font-normal my-4 lg:my-0">
             <a href="#">Cookie Policy</a>
