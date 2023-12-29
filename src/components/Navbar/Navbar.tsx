@@ -24,9 +24,9 @@ const Navbar = () => {
       <div className="max-w-screen-lg mx-auto p-4 flex justify-between items-center">
         <ul className="flex space-x-8 list-none">
           <li><a href="#">Home</a></li>
-          <li><a href="#" className="flex items-center space-x-1"><span>Model</span><img src="./expand_more.svg"/></a></li>
-          <li><a href="#" className="flex items-center space-x-1"><span>Be a Partner</span><img src="./expand_more.svg"/></a></li>
-          <li><a href="#" className="flex items-center space-x-1"><span>More</span><img src="./expand_more.svg"/></a></li>
+          <li><a href="#" className="flex items-center space-x-1"><span>Model</span><img src={isScrolled ? `./expand_more_light.svg`:`./expand_more.svg`}/></a></li>
+          <li><a href="#" className="flex items-center space-x-1"><span>Be a Partner</span><img src={isScrolled ? `./expand_more_light.svg`:`./expand_more.svg`}/></a></li>
+          <li><a href="#" className="flex items-center space-x-1"><span>More</span><img src={isScrolled ? `./expand_more_light.svg`:`./expand_more.svg`}/></a></li>
         </ul>
         <div className="flex space-x-8 items-center">
           <a href="#">Login</a>

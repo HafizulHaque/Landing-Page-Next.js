@@ -31,7 +31,7 @@ const Feature = (data: PropsType) => {
         <img src={`./${data.image}`} alt="icon" height={32} width={32}/>
       </div>
       <h3 className="text-base font-semibold leading-4 py-3">{data.heading}</h3>
-      <p className="text-sm">{data.details}</p>
+      <p className="text-sm line-clamp-3">{data.details}</p>
     </div>
   )
 }
