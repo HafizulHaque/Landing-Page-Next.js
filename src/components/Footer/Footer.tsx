@@ -4,7 +4,7 @@ import Button from "../Button/Button"
 
 const Footer = () => {
   return (
-    <footer className="bg-customNavy w-100 text-white">
+    <footer className="bg-customNavy w-100 text-white overflow-x-hidden">
       <div className="max-w-screen-lg mx-auto p-4">
         <div className="flex items-center border-b border-gray-700 py-8">
           <h1 className="w-1/2 text-3xl font-semibold tracking-wide leading-tight py-4">Join the Global Community for the Traders ✌️</h1>

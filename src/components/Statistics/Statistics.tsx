@@ -4,7 +4,7 @@ import Button from "../Button/Button"
 
 const Statistics = () => {
   return (
-    <section className="max-w-screen-lg mx-auto p-4 py-32">
+    <section className="max-w-screen-lg mx-auto p-4 py-32 overflow-x-hidden">
       <div className="flex items-center space-x-4">
         <div className="w-4/7">
           <h2 className="text-4xl font-semibold tracking-wide leading-tight py-4">Introducing FundedNext Stellar Challenge 🙌</h2>

@@ -9,7 +9,7 @@ const dataArray = [
 
 const Features = () => {
   return (
-    <section className="bg-offWhite">
+    <section className="bg-offWhite overflow-x-hidden">
       <div className="max-w-screen-lg mx-auto p-4 py-32">
         <div className="flex items-center space-x-8">
           <div className="w-1/2">
