@@ -4,7 +4,7 @@ import Button from "../Button/Button"
 
 const Statistics = () => {
   return (
-    <section className="bg-white overflow-x-hidden">
+    <section className="bg-white overflow-x-hidden p-2 lg:p-0">
       <div className="max-w-screen-lg mx-auto p-4 py-16 lg:pt-16 lg:pb-48 relative">
         <img src="./union-2.svg" alt="design" className="absolute top-0 right-[-120%] lg:right-[-50px] z-0"/>
         <img src="./union-3.svg" alt="design" className="absolute bottom-[16px] left-[-120%] lg:left-[-128px] z-0"/>

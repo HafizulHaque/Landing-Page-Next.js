@@ -4,10 +4,10 @@ import Button from "../Button/Button"
 
 const Footer = () => {
   return (
-    <footer className="bg-customNavy w-100 text-white overflow-x-hidden">
+    <footer className="bg-customNavy text-white overflow-x-hidden p-2 lg:p-0">
       <div className="max-w-screen-lg mx-auto p-4">
         <div className="lg:flex lg:items-center border-b border-gray-700 py-4 lg:py-8">
-          <h1 className="lg:w-1/2 text-2xl lg:text-3xl font-semibold tracking-wide leading-tight py-4">Join the Global Community for the Traders ✌️</h1>
+          <h1 className="lg:w-1/2 text-2xl lg:text-3xl font-medium tracking-wide leading-tight py-4">Join the Global Community for the Traders ✌️</h1>
           <div className="lg:w-1/2 lg:text-right">
             <Button text="" onClick={() => {}}>
               Join Our Discord<img className="inline ml-1" src="./social-discord.svg" alt="icon" height={10}/>
