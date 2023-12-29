@@ -6,7 +6,7 @@ import MobileNav from "../MobileNav/MobileNav";
 
 const Navbar = () => {
 
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -30,6 +30,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if(typeof window !== 'undefined'){
+      handleResize();
       window.addEventListener('resize', handleResize);
       return () => {
         window.removeEventListener('resize', handleResize);
