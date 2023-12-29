@@ -29,7 +29,7 @@ const MobileNav = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 h-100 w-full z-1000 py-4 transition-all duration-300 ${isScrolled || isMenuOpen ? 'bg-white text-black shadow-md' : 'bg-transparent text-white'}`}>
+    <nav className={`fixed top-0 left-0 z-50 h-100 w-full py-4 transition-all duration-300 ${isScrolled || isMenuOpen ? 'bg-white text-black shadow-md' : 'bg-transparent text-white'} ${isMenuOpen ? 'rounded-b-xl' : 'rounded-b-md'}`}>
       {/* mobile nav icon  */}
       <div className="flex justify-between items-center px-4">
         <a href="#" className={`font-semibold ${isScrolled || isMenuOpen ? 'text-customNavy' : 'text-white'}`}>Login</a>

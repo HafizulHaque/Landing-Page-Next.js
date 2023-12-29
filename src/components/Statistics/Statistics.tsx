@@ -4,10 +4,10 @@ import Button from "../Button/Button"
 
 const Statistics = () => {
   return (
-    <section className="max-w-screen-lg mx-auto p-4 py-32 overflow-x-hidden">
-      <div className="flex items-center space-x-4">
-        <div className="w-4/7">
-          <h2 className="text-4xl font-semibold tracking-wide leading-tight py-4">Introducing FundedNext Stellar Challenge 🙌</h2>
+    <section className="max-w-screen-lg mx-auto p-4 py-16 lg:py-32 overflow-x-hidden">
+      <div className="lg:flex lg:items-center lg:space-x-4">
+        <div className="lg:w-4/7">
+          <h2 className="text-2xl xl:text-4xl font-semibold tracking-wide leading-tight py-4 xl:py-8">Introducing FundedNext Stellar Challenge 🙌</h2>
           <ul className="pb-6 list-none">
             <li className="py-2 flex items-center">
               <div 
@@ -30,7 +30,7 @@ const Statistics = () => {
           </ul>
           <Button text="Learn More" onClick={() => {}}/>
         </div>
-        <div className="w-3/7">
+        <div className="lg:w-3/7">
           <div>
             <img src="./stats.svg" alt="statistics"/>
           </div>

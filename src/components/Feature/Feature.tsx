@@ -28,10 +28,10 @@ const Feature = (data: PropsType) => {
         src={data.isPrimary ? "./feature-grid-background.svg" : "./feature-grid-background-2.svg"}
         alt="background"/>
       <div className="my-2">
-        <img src={`./${data.image}`} alt="icon" height={32} width={32}/>
+        <img className="h-12 w-12" src={`./${data.image}`} alt="icon"/>
       </div>
-      <h3 className="text-base font-semibold leading-4 py-3">{data.heading}</h3>
-      <p className="text-sm line-clamp-3">{data.details}</p>
+      <h3 className="text-2xl lg:text-base font-bold lg:font-semibold leading-7 lg:leading-4 py-3">{data.heading}</h3>
+      <p className="lg:text-sm lg:line-clamp-3">{data.details}</p>
     </div>
   )
 }

@@ -10,19 +10,19 @@ const dataArray = [
 const Features = () => {
   return (
     <section className="bg-offWhite overflow-x-hidden">
-      <div className="max-w-screen-lg mx-auto p-4 py-32">
-        <div className="flex items-center space-x-8">
-          <div className="w-1/2">
+      <div className="max-w-screen-lg mx-auto p-4 py-16 lg:py-32">
+        <div className="block lg:flex lg:items-center lg:space-x-8">
+          <div className="lg:w-1/2">
             <div>
-              <h2 className="text-4xl font-semibold tracking-wide leading-tight py-4">What Makes FundedNext Different?</h2>
-              <p className="tracking-normal leading-7 pb-3" style={{wordSpacing: '.2em'}}>FundedNext offers no time limits in its funding challenges.</p>
+              <h2 className="text-2xl xl:text-4xl font-semibold tracking-wide leading-tight py-4 xl:py-8">What Makes FundedNext Different?</h2>
+              <p className="tracking-tight lg:tracking-normal leading-5 lg:leading-7 pb-2 lg:pb-8 lg:pb-5" style={{wordSpacing: '.2em'}}>FundedNext offers no time limits in its funding challenges.</p>
               <div className="flex items-center">
-                <div className="overflow-x-hidden relative">
+                <div className="overflow-x-hidden lg:relative">
                   <img 
                     src="./profiles.svg" 
                     alt="profiles" 
                     width={180}
-                    className="relative left-[-30px]"/>
+                    className="lg:relative lg:left-[-30px]"/>
                 </div>
                 <div className="text-sm">
                   <h3 className="font-medium">Our Happy Traders</h3>
@@ -35,10 +35,10 @@ const Features = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/2">
-            <div className="grid grid-cols-2 gap-4">
+          <div className="lg:w-1/2">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 p-8 lg:p-0">
               {dataArray.map((item, index) => (
-                <div key={index}>
+                <div key={index} className="">
                   <Feature {...item}/>
                 </div>
               ))}
