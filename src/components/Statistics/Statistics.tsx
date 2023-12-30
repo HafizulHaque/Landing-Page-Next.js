@@ -1,6 +1,6 @@
 'use client'
 
-import Button from "../../UI/Button/Button"
+import Button from "../UI/Button/Button"
 
 const Statistics = () => {
   return (

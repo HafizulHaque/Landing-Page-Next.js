@@ -1,4 +1,4 @@
-import Feature from "../../UI/Feature/Feature"
+import Feature from "../UI/Feature/Feature"
 
 const dataArray = [
   {image: 'icon-1.svg', heading: '15% Profit Sharing from Challenge Phase', details: 'FundedNext is the only prop firm to offer a 15% profit sharing from the profit you make', isPrimary: true},
