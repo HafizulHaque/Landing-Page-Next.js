@@ -66,16 +66,32 @@ const MobileNav = () => {
                 strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"/>
             </svg>
-          )}
+          )
+        }
       </div>
-      {/* nav icons  */}
+      {/* nav items  */}
       {isMenuOpen ? (
         <div className='bg-white text-black px-4' onClick={closeMenu}>
           <ul className="list-none">
             <li className='my-2'><a href="#">Home</a></li>
-            <li className='my-2'><a href="#" className="flex items-center space-x-1"><span>Model</span><img src={isScrolled || isMenuOpen ? `./expand_more_light.svg`:`./expand_more.svg`}/></a></li>
-            <li className='my-2'><a href="#" className="flex items-center space-x-1"><span>Be a Partner</span><img src={isScrolled || isMenuOpen ? `./expand_more_light.svg`:`./expand_more.svg`}/></a></li>
-            <li className='my-2'><a href="#" className="flex items-center space-x-1"><span>More</span><img src={isScrolled || isMenuOpen ? `./expand_more_light.svg`:`./expand_more.svg`}/></a></li>
+            <li className='my-2'>
+              <a href="#" className="flex items-center space-x-1">
+                <span>Model</span>
+                <img src={isScrolled || isMenuOpen ? `./expand_more_light.svg`:`./expand_more.svg`}/>
+              </a>
+            </li>
+            <li className='my-2'>
+              <a href="#" className="flex items-center space-x-1">
+                <span>Be a Partner</span>
+                <img src={isScrolled || isMenuOpen ? `./expand_more_light.svg`:`./expand_more.svg`}/>
+              </a>
+            </li>
+            <li className='my-2'>
+              <a href="#" className="flex items-center space-x-1">
+                <span>More</span>
+                <img src={isScrolled || isMenuOpen ? `./expand_more_light.svg`:`./expand_more.svg`}/>
+              </a>
+            </li>
           </ul>
           <div className="mb-4 mt-6">
            <Button text="Join Our Discord" onClick={() => {}}/>
