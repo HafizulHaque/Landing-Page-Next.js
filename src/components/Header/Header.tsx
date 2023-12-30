@@ -1,7 +1,6 @@
 import Hero from "../Hero/Hero"
 import Navbar from "../Navbar/Navbar"
-// import CustomMarquee from '../../Marquee/CustomMarquee'
-// import CustomMarquee from '../CustomMarquee/CustomMarquee'
+import CustomMarquee from '../CustomMarquee/CustomMarquee'
 
 const Header = () => {
   return (
@@ -12,7 +11,7 @@ const Header = () => {
         <Hero/>
       </div>
       <div className="absolute z-0 bottom-0 left-0 w-full">
-       {/* <CustomMarquee/> */}
+       <CustomMarquee/>
       </div>
     </header>
   )
