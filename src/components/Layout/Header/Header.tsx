@@ -1,6 +1,6 @@
 import Hero from "../Hero/Hero"
 import Navbar from "../Navbar/Navbar"
-import CustomMarquee from '../Marquee/CustomMarquee'
+import CustomMarquee from '../../Marquee/CustomMarquee'
 
 const Header = () => {
   return (

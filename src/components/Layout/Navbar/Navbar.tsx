@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import Button from "../Button/Button"
+import Button from "../../UI/Button/Button"
 import MobileNav from "../MobileNav/MobileNav";
 
 const Navbar = () => {

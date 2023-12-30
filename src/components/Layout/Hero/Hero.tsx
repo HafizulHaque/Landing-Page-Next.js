@@ -1,7 +1,7 @@
 "use client"
 
-import Button from "../Button/Button"
-import Stat from "../Stat/Stat"
+import Button from "../../UI/Button/Button"
+import Stat from "../../UI/Stat/Stat"
 
 const Hero = () => {
   return (

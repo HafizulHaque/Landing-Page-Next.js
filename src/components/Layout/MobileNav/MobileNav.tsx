@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import Button from '../Button/Button';
+import Button from '../../UI/Button/Button';
 
 const MobileNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

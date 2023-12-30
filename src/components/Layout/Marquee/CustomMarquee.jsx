@@ -1,5 +1,5 @@
 import Marquee from 'react-fast-marquee'
-import ScrollElement from '../ScrollElement/ScrollElement';
+import ScrollElement from '../UI/ScrollElement/ScrollElement';
 
 const dataArray = [
   { country1: 'bangladesh', currency1: 'BDT', country2: 'japan', currency2: 'JPY', currentRate: '+0.1234', rateChange: '+0.5678', changePercentage: '+12.34' },
