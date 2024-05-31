@@ -1,4 +1,4 @@
-# Landing Page Frontend Assignment Project
+# Landing Page with Next.js Project
 
 Figma Design: [Source](https://www.figma.com/file/cheJVLe616lXM6aGPgT2K3/TBL-sample-design?type=design&node-id=3-5160&mode=design&t=0HiHNPd6DvhBKRWU-0)
 
