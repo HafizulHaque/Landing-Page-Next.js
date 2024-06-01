@@ -2,7 +2,7 @@
 
 Figma Design: [Source](https://www.figma.com/file/cheJVLe616lXM6aGPgT2K3/TBL-sample-design?type=design&node-id=3-5160&mode=design&t=0HiHNPd6DvhBKRWU-0)
 
-Live preview available here: [Preview Link](https://hafizulhaque.github.io/Landing-Page-Assignment-Project)
+Live preview available here: [Preview Link](https://hafizulhaque.github.io/Landing-Page-Next.js/)
 
 **Desktop View**
 
